@@ -1,5 +1,5 @@
 # STAGE 1: Build an App #
-FROM node:latest AS build-source
+FROM node:14 AS build-source
 LABEL autodelete="true"
 WORKDIR /usr/src/app
 COPY package.json .
